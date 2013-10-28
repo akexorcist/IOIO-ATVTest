@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#426c7a" >
+	<LinearLayout
+	    android:layout_width="200dp"
+	    android:layout_height="30dp"
+	    android:layout_gravity="center"
+	    android:background="@drawable/statusbg"
+	    android:gravity="center"
+	    android:orientation="horizontal" >
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_gravity="bottom"
+		    android:gravity="center"
+		    android:text="IOIO-AVT Test"
+		    android:textColor="#FFFFFF"
+		    android:textSize="18dp" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="center" >
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:gravity="center"
+		    android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Port 0"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Digital Output"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />
+		    <ToggleButton
+		        android:id="@+id/btnLED"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:adjustViewBounds="true" 
+		        android:layout_marginTop="5dp" 
+		        android:background="@drawable/digitalinputoff" 
+		        android:textOff=" " 
+		        android:textOn=" " />
+		</LinearLayout>
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="20dp"
+		    android:gravity="center"
+		    android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Port 20"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Digital Input"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />
+		    <ImageView
+		        android:id="@+id/imgDI"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:adjustViewBounds="true" 
+		        android:layout_marginTop="5dp" 
+		        android:src="@drawable/digitalinputoff" />
+		</LinearLayout>
+		<LinearLayout 
+		    android:orientation="vertical"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="right" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Port 31"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="Analog Input"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />
+		    <TextView
+		        android:id="@+id/txtVal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="5dp"
+		        android:gravity="center"
+		        android:text="0 V"
+		        android:textColor="#0f3440"
+		        android:textSize="25dp" />			<LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:layout_gravity="center" 
+			    android:background="@drawable/progressbarbg" 
+			    android:layout_marginTop="5dp" >
+			    <ProgressBar
+			        android:id="@+id/progressBar"
+			        style="?android:attr/progressBarStyleHorizontal"
+			        android:layout_width="250dp"
+			        android:layout_height="25dp"
+			        android:layout_margin="5dp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
