@@ -13,6 +13,7 @@ import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.RoundRectShape;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Window;
 import android.widget.CompoundButton;
@@ -44,7 +45,7 @@ public class Main extends IOIOActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		Log.i("Check", "aaa");
 		// Set format of image that will be use in this application
         getWindow().setFormat(PixelFormat.RGBA_8888);
         
@@ -125,14 +126,14 @@ public class Main extends IOIOActivity {
 			// if we use any command which not ioio command 
 			// in any ioio board's function program will force close
 			// then we could use runnable to avoid force close
-			runOnUiThread(new Runnable() {
+			/*runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
 					// When device connected with ioio board 
 					// Toast will show "Connected!"
 					Toast.makeText(getApplicationContext(), "Connected!", Toast.LENGTH_SHORT).show();
 				}		
-			});
+			});*/Log.e("Check", "Connteced");
 		}
 
 		// This function will always running when device connect with ioio board
@@ -179,7 +180,7 @@ public class Main extends IOIOActivity {
 			} catch (InterruptedException e) {	}
 		}
 		
-		public void disconnected() {
+		public void disconnected() {/*
 			runOnUiThread(new Runnable() {
 				@Override
 				public void run() {
@@ -188,7 +189,7 @@ public class Main extends IOIOActivity {
 					Main.this.finish();
 					Toast.makeText(getApplicationContext(), "Disconnected!", Toast.LENGTH_SHORT).show();
 				}		
-			});	
+			});	*/Log.e("Check", "Disconnected");
 		}
 
 		public void incompatible() {
